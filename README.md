@@ -14,7 +14,7 @@ Python
 ```
 import re
 
-string = " "
+text = " "
 query = " "
 x = re.findall(query,string)
 print(x)
