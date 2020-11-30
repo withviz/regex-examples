@@ -1,7 +1,7 @@
 # regex-examples
  regex examples for google sheets, alteryx, and python
 
-## Setup
+## setup
 
 [Google sheets](https://support.google.com/docs/answer/3098244?hl=en)
 `REGEXEXTRACT(text, regular_expression)`
@@ -9,9 +9,11 @@
 Alteryx
 Uses 'RegEx' tool with Output method 'Parse'
 
+"In "Parse" mode, partial matches will be considered, however only the first match will be returned."
+
 Python
 
-```
+``` python
 import re
 
 text = " "
