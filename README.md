@@ -23,14 +23,14 @@ print(x)
 
 ```
 
-| text | Do What? | Google Sheets | Alteryx | Python | Result |
+| text | do what? | google sheets | alteryx | python | result |
 | :-- | :-- | :-- | :-- | :-- | :--|
-| "String with £12.99" | parse the positive number after £
-| "String with -£12.99" | parse the negative number after £
-| "String with 0.99" |  parse the positive number
-| "String with -0.99" | parse the negative number
-| "String with £12,000" | parse the positive number after £ without including ','
-| "String with -£12,000" | parse the negative number after £ without including ','
-| "String with £12,000.00" | parse the number and being mindful of the decimal
-| "String with -£12,000.00" | parse the number and be mindful of the decimal
-| "String with  |
+| String with £12.99 | parse the positive number after £
+| String with -£12.99 | parse the negative number after £
+| String with 0.99 |  parse the positive number
+| String with -0.99 | parse the negative number
+| String with £12,000 | parse the positive number after £ without including ','
+| String with -£12,000 | parse the negative number after £ without including ','
+| String with £12,000.00 | parse the number and being mindful of the decimal
+| String with -£12,000.00 | parse the number and be mindful of the decimal
+| String with  |
