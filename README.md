@@ -40,7 +40,7 @@ For all examples, the objective is to retrieve the integer or decimal number.
 
 | text |  google sheets | alteryx | python | result |
 | :-- |  :-- | :-- | :-- | :--|
-| String with £12.99 | ```=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))``` |  see option 1 | tbc | 12.99 |
+| String with £12.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` |  see option 1 | tbc | 12.99 |
 | String with -£12.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1 | tbc| 12.99
 | String with 0.99 |  `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1 | tbc| 0.99
 | String with -0.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1  | tbc| -0.99
