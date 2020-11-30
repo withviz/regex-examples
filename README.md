@@ -24,7 +24,6 @@ Option 1:
 Tool 1 - Use the formula tool and `REGEX_Replace([Field1], "£|$|,","")`
 Tool 2 - Use the regex tool with `(-*\d+.\d+)` and Output method = Parse. Change the configuration in Output Columns to `Fixed Decimal`.
 
-2 step `REGEX_Replace([Field1], "£|$|,","")` then `(-*\d+.\d+)` 
 ### Python
 
 ``` python
@@ -41,11 +40,11 @@ For all examples, the objective is to retrieve the integer or decimal number.
 
 | text |  google sheets | alteryx | python | result |
 | :-- |  :-- | :-- | :-- | :--|
-| String with £12.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` |  ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ```| tbc | 12.99
-| String with -£12.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ``` | tbc| 12.99
-| String with 0.99 |  `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ``` | tbc| 0.99
-| String with -0.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ```  | tbc| -0.99
-| String with £12,000 |  `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ```  | tbc| 12000
-| String with -£12,000 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ``` | tbc| -12000
-| String with £12,000.00 |  `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ```  |tbc | 12000.00
-| String with -£12,000.00 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | ``` 2 step REGEX_Replace([Field1], "£|$|,","") then (-*\d+.\d+) ```  | tbc| -12000.00
+| String with £12.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` |  see option 1 | tbc | 12.99
+| String with -£12.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1 | tbc| 12.99
+| String with 0.99 |  `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1 | tbc| 0.99
+| String with -0.99 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1  | tbc| -0.99
+| String with £12,000 |  `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1  | tbc| 12000
+| String with -£12,000 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1 | tbc| -12000
+| String with £12,000.00 |  `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1  |tbc | 12000.00
+| String with -£12,000.00 | `=value(regexextract(REGEXREPLACE(A1,"£|$|,",""),"-*\d+.\d+"))` | see option 1  | tbc| -12000.00
