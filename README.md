@@ -1,8 +1,27 @@
 # regex-examples
  regex examples for google sheets, alteryx, and python
 
+## Setup
 
-| String | Do What? | Google Sheets | Alteryx | Python | Result |
+[Google sheets](https://support.google.com/docs/answer/3098244?hl=en)
+`REGEXEXTRACT(text, regular_expression)`
+
+Alteryx
+Uses 'RegEx' tool with Output method 'Parse'
+
+Python
+
+```
+import re
+
+string = " "
+query = " "
+x = re.findall(query,string)
+print(x)
+
+```
+
+| text | Do What? | Google Sheets | Alteryx | Python | Result |
 | :-- | :-- | :-- | :-- | :-- | :--|
 | "String with £12.99" | parse the positive number after £
 | "String with -£12.99" | parse the negative number after £
