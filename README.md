@@ -1,5 +1,7 @@
 # regex-examples
  regex examples for google sheets, alteryx, and python
+ 
+ This started as a good idea but it's difficult to display examples for Alteryx.
 
 ## setup
 
